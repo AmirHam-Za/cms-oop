@@ -3,7 +3,7 @@
 
 Welcome to my awesome project! Check out this video:
 
-[![Watch the video](https://img.youtube.com/vi/Se89eh0DHJM/0.jpg)](https://youtu.be/Se89eh0DHJM)
+[![Watch the video]](https://youtu.be/Se89eh0DHJM)
 
 ### PHP OOP CMS APPLICATION-Projects screenshots.
 ![Slide1](https://github.com/AmirHam-Za/cms-oop/assets/125890933/5250b8ab-3d13-4f97-81b6-40b9c696bbb5)
