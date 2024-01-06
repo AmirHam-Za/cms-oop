@@ -22,7 +22,6 @@ Session::init();
 
   <body class="bg-gray-200">
 
-
   </body>
 
   </html>

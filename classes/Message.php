@@ -1,6 +1,10 @@
 <?php
  include_once '../DB.php';
-class Message {
+ include_once 'Interface.php';
+
+
+class Message implements MessageInterface
+ {
     public $db;
     public function __construct(){
 

@@ -1,6 +1,9 @@
 <?php
 include_once "Parents.php";
-class Comment extends Parents
+include_once "Interface.php";
+
+
+class Comment extends Parents implements CommentInterface
 {
   public function showComment($postId)
   {

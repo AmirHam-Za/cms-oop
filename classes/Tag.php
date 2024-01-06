@@ -1,12 +1,13 @@
 <?php
 
 include_once "Parents.php";
+include_once "Interface.php";
 
 
-class Tag extends Parents
+class Tag extends Parents implements TagInterface
  {
    
-    public function showTag()
+    public function showTag() : object
     {
         $query = "SELECT * FROM tags";
         $result = $this->db->select($query);
@@ -14,7 +15,7 @@ class Tag extends Parents
       // $result = $conn->query($sql);
       return $result;
     }
-    public function showCategoryID($catId)
+    public function showCategoryID($catId) : object
     {
       $query = "SELECT * FROM tags WHERE id = $catId";
       $result = $this->db->select($query);
@@ -100,7 +101,7 @@ class Tag extends Parents
       return $result;
     }
  
-    public function updateTag($data, $id)
+    public function updateTag($data, $id) : bool
 {
   $name = $data['name'];
   
@@ -140,7 +141,7 @@ class Tag extends Parents
     }
     
     
-    public function delTag($id)
+    public function delTag($id):bool
     {
       $sqlDeleteContent = "DELETE FROM content WHERE tag_id = $id";
       $delcon = $this->db->delete($sqlDeleteContent);
