@@ -1,10 +1,14 @@
 <?php
 ob_start();
 include_once "Parents.php";
-class Category extends Parents
+include_once 'interface.php';
+
+
+class Category extends Parents implements CategoryInterface
 {
 
-  public function showCategory()
+
+  public function showCategory() :object
   {
     $query = "SELECT * FROM categories";
     $result = $this->db->select($query);
@@ -34,7 +38,7 @@ class Category extends Parents
         return false;
     }
   }
-  public function addCategory($data)
+  public function addCategory($data) 
   {
     $name = $this->form->validation($data['name']);
 
@@ -58,7 +62,7 @@ class Category extends Parents
       }
     }
   }
-  public function getCategoryById($categoryId)
+  public function getCategoryById($categoryId) :object
   {
     $query = "SELECT * FROM categories WHERE id = '$categoryId'";
     $result = $this->db->select($query);
@@ -72,7 +76,7 @@ class Category extends Parents
     return $result;
   }
 
-  public function updateCategory($data, $id)
+  public function updateCategory($data, $id) 
   {
     $name = $data['name'];
 
