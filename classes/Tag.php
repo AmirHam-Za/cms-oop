@@ -19,10 +19,20 @@ class Tag extends Parents implements TagInterface
     {
       $query = "SELECT * FROM tags WHERE id = $catId";
       $result = $this->db->select($query);
-    // $query = "SELECT * FROM categories ORDER BY id DESC";
-    // $result = $conn->query($sql);
-    return $result;
+      // $query = "SELECT * FROM categories ORDER BY id DESC";
+      // $result = $conn->query($sql);
+      return $result;
     }
+
+ 
+
+    public function tagForSelect() 
+  {
+    $sql = "SELECT id, name FROM tags";
+    $result  = $this->db->select($sql);
+
+    return $result;
+  }
     // public function getCategoryById($id)
     // {
     //   $query = "SELECT * FROM comments WHERE id = '$id'";
@@ -38,8 +48,7 @@ class Tag extends Parents implements TagInterface
       $result = $this->db->select($query);
       return $result;
   
-  
-      if ($result) {
+        if ($result) {
           $row = $result->fetch_assoc();
           // return $row['count'];
           echo $row['count'];
@@ -52,23 +61,20 @@ class Tag extends Parents implements TagInterface
     {
       $name = $this->form->validation($data['name']);
       
-
       if (empty($name)) {
-        $error = "Filds must not be empty !";
+        $error = "Fields must not be empty !";
         echo Flash::warning($error);
         // echo $error;
         return $error;
       }else{
         
-
       $e_query = "INSERT INTO tags (name) VALUES ('$name')";
       $result = $this->db->insert($e_query);
       if ($result == true) {
         $msg = "Tag Created Succcessfully";
         // echo Flash::success($msg);
     
-    
-        $_SESSION['flash_message'] = "Ceate Successful";
+        $_SESSION['flash_message'] = "Create Successful";
         header("Location: tags.php");
         exit();  
         // echo $msg;
@@ -87,35 +93,34 @@ class Tag extends Parents implements TagInterface
     {
         $query = "SELECT * FROM tags WHERE id = '$categoryId'";
         $result = $this->db->select($query);
-      // $query = "SELECT * FROM categories ORDER BY id DESC";
-      // $result = $conn->query($sql);
-      return $result;
+        // $query = "SELECT * FROM categories ORDER BY id DESC";
+        // $result = $conn->query($sql);
+        return $result;
     }
     public function getContentByTagId($categoryId)
     {
         
         $query = "SELECT * FROM content WHERE tag_id = $categoryId";
         $result = $this->db->select($query);
-      // $query = "SELECT * FROM categories ORDER BY id DESC";
-      // $result = $conn->query($sql);
-      return $result;
+        // $query = "SELECT * FROM categories ORDER BY id DESC";
+        // $result = $conn->query($sql);
+        return $result;
     }
  
     public function updateTag($data, $id) : bool
-{
+    {
   $name = $data['name'];
   
-      
-  if (empty($name))  {
-    // $msg = "Filds Must Not Be empty";
-    // return $msg;
-
-    $_SESSION['flash_message'] = " Empty field not allowed" ;
-  }
+    if (empty($name))
+    {
+      // $msg = "Filds Must Not Be empty";
+      // return $msg;
+      $_SESSION['flash_message'] = " Empty field not allowed" ;
+    }
   
-    $query   = "UPDATE  tags SET 
-    name     = '$name'
-    WHERE id ='$id'";
+      $query   = "UPDATE  tags SET 
+      name     = '$name'
+      WHERE id ='$id'";
 
       $result = $this->db->update($query);
 
@@ -141,7 +146,7 @@ class Tag extends Parents implements TagInterface
     }
     
     
-    public function delTag($id):bool
+    public function delTag($id) : void
     {
       $sqlDeleteContent = "DELETE FROM content WHERE tag_id = $id";
       $delcon = $this->db->delete($sqlDeleteContent);
@@ -185,5 +190,5 @@ class Tag extends Parents implements TagInterface
     //   }
     // }
  
-}
+ }
 ?>

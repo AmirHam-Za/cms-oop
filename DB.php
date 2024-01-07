@@ -1,8 +1,7 @@
 <?php
 include_once 'config.php';
-class DB
+class DB 
 {
-
   public $host = HOST;
   public $user = USER;
   public $password = PASSWORD;
@@ -15,34 +14,49 @@ class DB
   // database connection setup goes here
   public function __construct()
   {
-    $this->dbconnet();
-
-  }
-  public function test()
-  {
-    $result = 'I am from DB.php';
-    return $result;
-
+    $this->dbConnect();
   }
   public function escape($value)
   {
     return mysqli_real_escape_string($this->conn, $value);
   }
-  public function dbConnet()
+  // procedural
+  // public function dbConnect()
+  // {
+  //   $this->link = mysqli_connect(
+  //     $this->host,
+  //     $this->user,
+  //     $this->password,
+  //     $this->database
+  //   );
+  //   if (!$this->link) {
+  //     $this->error = "Database Connection Failed";
+
+  //     return false;
+  //   }
+  // }
+
+// OOP
+  public function dbConnect()
   {
-    $this->link = mysqli_connect(
+    $this->link = new mysqli(
       $this->host,
       $this->user,
       $this->password,
       $this->database
     );
+
+
+    // Check connection
+    if ($this->link->connect_error) {
+        die("Connection failed: " . $this->link->connect_error);
+    }
     if (!$this->link) {
       $this->error = "Database Connection Failed";
 
       return false;
     }
   }
-
   public function select($query)
   {
     $result = mysqli_query($this->link, $query);
@@ -92,5 +106,4 @@ class DB
     }
   }
 }
-
 ?>

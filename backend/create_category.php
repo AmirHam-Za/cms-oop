@@ -20,10 +20,6 @@ $category = new Category();
 			</div>
 			<div class="w-full p-2 ml-64 mt-12">
 				<?php
-				include 'db_connection.php';
-				// Function to delete a user by ID
-				?>
-				<?php
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$categoryData = $category->addCategory($_POST);
 

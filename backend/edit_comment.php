@@ -74,7 +74,7 @@ include 'layout/header.php';
                     </div>
 
                     <div class="mb-4 bg-gray-200 rounded p-2">
-                      <label class="block text-lg text-gray-600 font-bold mb-2 pl-2" for="comment">Name:</label>
+                      <label class="block text-lg text-gray-600 font-bold mb-2 pl-2" for="comment">Comment:</label>
                       <input type="text" id="comment" name="comment" value="<?php echo $commentData['comment']; ?>"
                         class="p-2 border rounded w-full" required>
                     </div>

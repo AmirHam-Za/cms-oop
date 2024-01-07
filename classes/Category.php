@@ -38,6 +38,15 @@ class Category extends Parents implements CategoryInterface
         return false;
     }
   }
+
+  public function CategoryForSelect() 
+  {
+    $sql = "SELECT id, name FROM categories";
+    $result  = $this->db->select($sql);
+
+    return $result;
+  }
+
   public function addCategory($data) 
   {
     $name = $this->form->validation($data['name']);
@@ -57,7 +66,7 @@ class Category extends Parents implements CategoryInterface
         exit();
       } else {
         $_SESSION['flash_message'] = "Failed";
-        // echo"Apni Fail Korechen";
+        // echo"Apni Fail Korechen"; 
 
       }
     }

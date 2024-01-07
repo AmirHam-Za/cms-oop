@@ -6,6 +6,8 @@
 // }
 include '../Session.php';
 include '../classes/Content.php';
+include '../classes/Category.php';
+include '../classes/Tag.php';
 Session::checkSession();
 ?>
 <?php include 'layout/header.php'; ?>
@@ -35,22 +37,7 @@ Session::checkSession();
 
 
 
-        include 'db_connection.php';
-        //         // Function to delete a user by ID
-//         function deleteUser($contentId)
-//         {
-//           global $conn;
-        
-        //           $contentId = (int) $contentId;
-        
-        //           $sql = "DELETE FROM users WHERE id = $contentId";
-        
-        //           if ($conn->query($sql) === TRUE) {
-//             return true;
-//           } else {
-//             return false;
-//           }
-//         }
+        // include 'db_connection.php';
         ?>
 
         <body class="bg-gray-100">
@@ -103,8 +90,11 @@ Session::checkSession();
                       <div class="">
                         <!--************  Fetch tag from the "categories" table*********************-->
                         <?php
-                        $sqlCategories = "SELECT id, name FROM categories";
-                        $resultCategories = $conn->query($sqlCategories);
+                        $category = new Category();
+                        $resultCategories = $category->CategoryForSelect();
+
+                        // $sqlCategories = "SELECT id, name FROM categories";
+                        // $resultCategories = $conn->query($sqlCategories);
                         ?>
 
                         <!--************ Select Option for category table*********************-->
@@ -147,8 +137,8 @@ Session::checkSession();
                       <div class="">
                         <!--************  Fetch tag from the "tags" table*********************-->
                         <?php
-                        $sqlTags = "SELECT id, name FROM tags";
-                        $resultTags = $conn->query($sqlTags);
+                        $tag = new Tag();
+                        $resultTags = $tag->tagForSelect();
                         ?>
 
                         <!--************ Select Option for tag table*********************-->

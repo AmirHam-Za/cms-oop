@@ -3,10 +3,7 @@ include_once 'Session.php';
 
 include_once 'DB.php';
 include_once 'helper/Format.php';
-include_once 'interface.php';
-
-
-class AdminLogin implements Admin 
+class AdminLogin
 {
   public $db;
   public $form;
@@ -17,7 +14,7 @@ class AdminLogin implements Admin
     // $this->ms = $msg;
   }
 
-  public function LoginUser($email, $password) 
+  public function LoginUser($email, $password)
   {
     $email = $this->form->validation($email);
     $password = $this->form->validation($password);

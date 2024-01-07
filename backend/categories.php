@@ -1,5 +1,4 @@
 <?php include 'layout/header.php'; ?>
-
 <?php
 include '../Session.php';
 Session::checkSession();
