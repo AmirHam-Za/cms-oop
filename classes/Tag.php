@@ -1,5 +1,7 @@
 <?php
+namespace classes;
 
+use Parents;
 include_once "Parents.php";
 include_once "Interface.php";
 

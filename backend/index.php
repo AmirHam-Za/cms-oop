@@ -1,4 +1,7 @@
 <?php
+
+use classes\Tag;
+use classes\Category;
 // session_start();
 include '../Session.php';
 Session::checkSession();

@@ -1,4 +1,5 @@
 <?php
+namespace classes;
 interface Admin
 {
     public function LoginUser($username, $password);

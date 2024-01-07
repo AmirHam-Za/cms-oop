@@ -1,6 +1,8 @@
 <?php include 'layout/header.php'; ?>
 
 <?php
+
+use classes\Comment;
 include '../Session.php';
 Session::checkSession();
 

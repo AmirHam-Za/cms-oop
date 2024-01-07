@@ -1,12 +1,18 @@
-<?php include 'layout/header.php'; ?>
+<?php 
+require_once '../vendor/autoload.php';
+include 'layout/header.php';
+ ?>
+
 <?php
+
+// use Session;
 include '../Session.php';
 Session::checkSession();
-include '../classes/Category.php';
+// include '../classes/Category.php';
 
 // include '../classes/Message.php';
 // Message::flash();
-$category = new Category();
+$category = new classes\Category;
 $allCategory = $category->showCategory();
 
 ?>

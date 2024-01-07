@@ -1,5 +1,4 @@
 <?php
-
 ob_start();
 include_once "../DB.php";
 include_once "Flash.php";

@@ -1,4 +1,8 @@
 <?php
+namespace classes;
+
+use Flash;
+use Parents;
 include_once "Parents.php";
 include_once "Interface.php";
 

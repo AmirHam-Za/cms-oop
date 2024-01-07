@@ -1,9 +1,16 @@
-<?php include 'layout/header.php'; ?>
+<?php 
+
+include_once "../vendor/autoload.php";
+include 'layout/header.php'; 
+?>
 
 <?php
+
+use classes\Tag;
 include '../Session.php';
 Session::checkSession();
-include '../classes/Tag.php';
+// include '../classes/Tag.php';
+
 
 // include '../classes/Message.php';
 // Message::flash();

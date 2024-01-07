@@ -1,4 +1,7 @@
 <?php
+
+use classes\Tag;
+require_once '../vendor/autoload.php';
 include '../Session.php';
 Session::checkSession();
 
@@ -6,8 +9,8 @@ include '../classes/Tag.php';
 $category = new Tag();
 
 // $updateComment = $comment->updateComment($_POST, $id);
-include '../classes/Message.php';
-Message::flash();
+// include '../classes/Message.php';
+// Message::flash();
 
 include 'layout/header.php';
 // include 'db_connection.php';

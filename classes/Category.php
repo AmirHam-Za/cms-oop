@@ -1,4 +1,9 @@
 <?php
+namespace classes;
+
+use Parents;
+
+// use Parents;
 ob_start();
 include_once "Parents.php";
 include_once 'interface.php';
