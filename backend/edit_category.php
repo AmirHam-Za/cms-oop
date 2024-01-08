@@ -1,15 +1,17 @@
 <?php
 include '../Session.php';
 Session::checkSession();
-
+// use classes\Category;
 include '../classes/Category.php';
-$category = new Category();
+$category = new classes\Category();
 // $updateComment = $comment->updateComment($_POST, $id);
 
-include '../classes/Message.php';
+// include '../classes/Message.php';
 // Message::flash();
 ?>
 <?php
+
+
 include 'layout/header.php';
 // include 'db_connection.php';
 ?>

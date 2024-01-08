@@ -4,6 +4,7 @@ Session::checkSession();
 ?>
 <?php include 'layout/header.php'; ?>
 
+
 <body>
 	<div class="flex flex-col">
 		<div class="">

@@ -1,15 +1,19 @@
 <?php
+require_once '../vendor/autoload.php';
 // session_start();
 include '../Session.php';
 Session::checkSession();
 include 'layout/header.php';
-
-include '../classes/Content.php';
-include '../classes/Category.php';
-include '../classes/Tag.php';
-$cntnt = new Content();
-$cat = new Category();
-$tags = new Tag();
+// use Parents;
+// use classes\Tag;
+// use classes\Content;
+// use classes\Category;
+// include '../classes/Content.php';
+// include '../classes/Category.php';
+// include '../classes/Tag.php';
+$cntnt = new classes\Content;
+$cat = new classes\Category;
+$tags = new classes\Tag;
 
 $allCntnt = $cntnt->showContent();
 ?>

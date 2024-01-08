@@ -1,6 +1,6 @@
 <?php
 // ob_start();
-
+// namespace Session;
 class Session
 {
   // public static function init()

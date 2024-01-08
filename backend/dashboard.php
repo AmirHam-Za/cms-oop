@@ -4,6 +4,11 @@ Session::checkSession();
 
 ?>
 <?php
+
+use classes\Tag;
+use classes\Comment;
+use classes\Content;
+use classes\Category;
 include 'layout/header.php';
 ?>
 <div class="flex flex-col">
