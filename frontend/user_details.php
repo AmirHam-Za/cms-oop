@@ -28,7 +28,7 @@ include 'excerpt.php';
         <?php
         // OOP
         include '../classes/Comment.php';
-        $comment = new Comment();
+        $comment = new classes\Comment();
         // $showNav = $comment->showComment();
         
 

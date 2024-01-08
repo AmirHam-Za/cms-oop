@@ -4,6 +4,7 @@ include '../Session.php';
 Session::checkSession();
 ?>
 <?php
+
 include 'layout/header.php';
 // include 'db_connection.php';
 ?>

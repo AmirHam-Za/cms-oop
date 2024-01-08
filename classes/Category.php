@@ -1,18 +1,17 @@
 <?php
 namespace classes;
+// require_once '../vendor/autoload.php';
 
+use Flash;
 use Parents;
-
-// use Parents;
 ob_start();
 include_once "Parents.php";
 include_once 'interface.php';
+// include_once 'interfaces/interface.php';
 
 
 class Category extends Parents implements CategoryInterface
 {
-
-
   public function showCategory() :object
   {
     $query = "SELECT * FROM categories";

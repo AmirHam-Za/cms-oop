@@ -1,6 +1,10 @@
 <?php include 'layout/header.php'; ?>
 
 <?php
+// use Flash;
+// use Session;
+
+
 include '../Session.php';
 Session::checkSession();
 ?>
@@ -125,6 +129,8 @@ Session::checkSession();
 </main>
 
 <?php
+
+
 // $conn->close();
 
 ?>

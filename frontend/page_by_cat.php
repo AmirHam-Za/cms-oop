@@ -1,5 +1,6 @@
 <?php
-include 'db_connection.php';
+use classes\Category;
+// include 'db_connection.php';
 include 'excerpt.php';
 
 include '../classes/Category.php';
@@ -21,7 +22,7 @@ $showCategory = $category->showCategory();
   <main class="w-full mt-16">
 
     <?php
-    include 'db_connection.php';
+    // include 'db_connection.php';
 
     if (isset($_GET['id'])) {
       $categoryId = $_GET['id'];
@@ -156,5 +157,5 @@ $showCategory = $category->showCategory();
 </html>
 <?php
 // Close the connection
-$conn->close();
+// $conn->close();
 ?>

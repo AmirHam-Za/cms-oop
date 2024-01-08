@@ -1,14 +1,17 @@
 <?php
 include '../DB.php';
+
 $db = new DB();
 // include 'db_connection.php';
 include 'excerpt.php';
 include '../classes/Content.php';
-$cntnt = new Content;
+$cntnt = new classes\Content;
 
 ?>
 <!-- **************HEADER*************** -->
 <?php include "layout/head.php"; ?>
+
+
 <!-- **************HEADER*************** -->
 
 <body class="bg-gray-200 w-screen p-0 m-0">

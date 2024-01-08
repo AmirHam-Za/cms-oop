@@ -1,7 +1,7 @@
 <?php
 // include 'db_connection.php';
 include 'excerpt.php';
-
+use classes\Tag;
 
 // $sql = "SELECT * FROM content";
 // $result = $conn->query($sql);
