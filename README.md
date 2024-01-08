@@ -4,36 +4,35 @@
 [![Watch the video](https://img.youtube.com/vi/Se89eh0DHJM/0.jpg)](https://www.youtube.com/embed/Se89eh0DHJM)
 
 # Installation
-Install XAMPP or WAMPP.
 
-Open XAMPP Control panal and start [apache] and [mysql] .
+1. Install XAMPP or WAMPP.
 
-Download project from github(https://github.com/PuneethReddyHC/online-shopping-system-with-advanced-admin-page.git)
+2. Open XAMPP Control panal and start [apache] and [mysql] .
+
+3. Download project from github(https://github.com/AmirHam-Za/cms-oop.git)
 OR follow gitbash commands
 
 i>cd C:\xampp\htdocs\
 
-ii>git clone https://github.com/PuneethReddyHC/online-shopping-system-with-advanced-admin-page.git
+ii>git clone https://github.com/AmirHam-Za/cms-oop.git
 
-extract files in C:\xampp\htdocs.
+4. extract files in C:\xampp\htdocs.
 
-open link localhost/phpmyadmin
+5. open link localhost/phpmyadmin
 
-click on new at side navbar.
+6. click on new at side navbar.
 
-give a database name as (onlineshop) hit on create button.
+7. give a database name as (my_cms_db) hit on create button.
 
-after creating database name click on import.
+8. after creating database name click on import.
 
-browse the file in directory[online-shopping-system-with-advanced-admin-page/database/onlineshop.sql].
+10. browse the file in directory[cms-oop-main/my_cms_db].
 
-after importing successfully.
-
-open any browser and type http://localhost/online-shopping-system-with-advanced-admin-page-master.
+11. after importing successfully,open any browser and type http://localhost/online-shopping-system-with-advanced-admin-page-master.
 
 first register and then login
 
-admin login details Email=admin@gmail.com or username = admin and Password=123456789.
+admin login details Email=admin@gmail.com and Password=@admin123.
 
 
 ### PHP OOP CMS APPLICATION-Projects screenshots.
