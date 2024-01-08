@@ -13,9 +13,9 @@
 3. Download project from github(https://github.com/AmirHam-Za/cms-oop.git)
 OR follow gitbash commands
 
-i>cd C:\xampp\htdocs\
+   ==>cd C:\xampp\htdocs\
 
-ii>git clone https://github.com/AmirHam-Za/cms-oop.git
+   ==>git clone https://github.com/AmirHam-Za/cms-oop.git
 
 4. extract files in C:\xampp\htdocs.
 
