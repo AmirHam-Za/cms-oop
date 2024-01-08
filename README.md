@@ -29,11 +29,11 @@ ii>git clone https://github.com/AmirHam-Za/cms-oop.git
 
 10. browse the file in directory[cms-oop-main/my_cms_db].
 
-11. after importing successfully,open any browser and type http://localhost/online-shopping-system-with-advanced-admin-page-master.
+11. in the terminal run "composer install".
 
-first register and then login
+12. after importing successfully,open any browser and type http://localhost/cms-oop-main.
 
-admin login details Email=admin@gmail.com and Password=@admin123.
+13. first register and then login or login with remaining credential.Admin login details Email=admin@gmail.com and Password=@admin123.
 
 
 ### PHP OOP CMS APPLICATION-Projects screenshots.
