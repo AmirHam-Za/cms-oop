@@ -2,15 +2,17 @@
 include '../Session.php';
 Session::checkSession();
 
+use classes\Comment;
 include '../classes/Comment.php';
 
 $comment = new Comment();
 
-include '../classes/Message.php';
-Message::flash();
+// include '../classes/Message.php';
+// Message::flash();
 
 ?>
 <?php
+
 include 'layout/header.php';
 // include 'db_connection.php';
 ?>

@@ -1,13 +1,15 @@
 <?php 
 require_once '../vendor/autoload.php';
+
+include '../Session.php';
+Session::checkSession();
 include 'layout/header.php';
  ?>
 
 <?php
 
 // use Session;
-include '../Session.php';
-Session::checkSession();
+
 // include '../classes/Category.php';
 
 // include '../classes/Message.php';

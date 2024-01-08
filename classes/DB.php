@@ -1,6 +1,8 @@
 <?php
+namespace classes;
 
-include_once 'config.php';
+use mysqli;
+include_once '../config.php';
 class DB 
 {
   public $host = HOST;

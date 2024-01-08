@@ -7,6 +7,7 @@ Session::checkSession();
 
 use classes\Tag;
 use classes\Comment;
+use classes\Content;
 use classes\Category;
 include 'layout/header.php';
 ?>

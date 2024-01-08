@@ -1,10 +1,15 @@
 <?php
-// namespace classes\Content ;
+namespace classes;
+
+use Flash;
+use Parents;
 
 
-// error_reporting(E_ALL);
 include_once "Parents.php";
-class Content extends Parents
+include_once 'interface.php';
+
+
+class Content extends Parents implements ContentInterface
 {
   public function showContent()
   {

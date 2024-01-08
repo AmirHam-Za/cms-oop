@@ -1,6 +1,7 @@
 <?php
-use classes\Session;
+// use classes\Session;
 require_once '../vendor/autoload.php';
+require_once '../Session.php';
 Session::checkSession();
 
 $category = new classes\Tag();

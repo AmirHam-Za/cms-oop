@@ -18,6 +18,18 @@ interface CategoryInterface
     public function delCategory($id);
 
 }
+interface ContentInterface
+{
+    public function showContent();
+    public function addContent($data, $file);
+    public function  allStudent();
+    public function contentCount();
+    public function getContentById($id);
+    public function updateContent($data, $file, $id);
+    public function delContent($id);
+   
+
+}
 
 interface CommentInterface
 {

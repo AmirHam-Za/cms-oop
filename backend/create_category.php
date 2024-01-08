@@ -1,13 +1,16 @@
 <?php
+require_once '../vendor/autoload.php';
 include '../Session.php';
-include '../classes/Content.php';
 Session::checkSession();
 
-include '../classes/Category.php';
-$category = new Category();
+
+
+// include '../classes/Category.php';
+$category = new classes\Category();
 
 ?>
 <?php include 'layout/header.php'; ?>
+
 
 <body>
 	<div class="flex flex-col">
