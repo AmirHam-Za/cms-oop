@@ -1,6 +1,4 @@
 <?php
-
-
 include '../classes/Footer.php';
 $nav = new Footer();
 $showNav = $nav->showFooter();

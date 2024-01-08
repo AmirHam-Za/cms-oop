@@ -4,6 +4,9 @@
 //   header('Location: ../login.php');
 //   exit();
 // }
+use classes\Tag;
+use classes\Content;
+use classes\Category;
 include '../Session.php';
 include '../classes/Content.php';
 include '../classes/Category.php';
@@ -11,6 +14,7 @@ include '../classes/Tag.php';
 Session::checkSession();
 ?>
 <?php include 'layout/header.php'; ?>
+
 
 <body>
   <div class="flex flex-col">

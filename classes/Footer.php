@@ -19,7 +19,7 @@ class Footer extends Parents
   public function showFooter()
   {
     // $query = "SELECT * FROM header_footer LIMIT 1";
-    $query = "SELECT * FROM header_footer";
+    $query = "SELECT * FROM header_footer ORDER BY id DESC";
     $result = $this->db->select($query);
     return $result;
   }

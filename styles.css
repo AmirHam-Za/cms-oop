@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(backend/layout/style.css);
 
 body{
     background: #000;

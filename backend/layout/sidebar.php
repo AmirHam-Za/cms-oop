@@ -1,14 +1,6 @@
-<?php
-// include '../Session.php';
-// Session::checkSession();
-// header_remove();
-?>
-
 <div class="sidebar w-64 p-0 fixed top-16 bg-gray-300 bg-opacity-35">
   <div class="w-full p-2 min-h-screen relative  backdrop-blur-md bg-black/30">
     <div class="w-full">
-
-
       <div class=" border rounded-xl p-1 mb-2 ">
         <div class="w-full flex justify-center">
           <img class="w-24 h-24 rounded-full" src="https://pbs.twimg.com/media/BhJvvlVIUAAB-dB.png" alt="">
@@ -81,10 +73,6 @@
         <a class="w-full block" href="header_footer.php"><i class="fa-solid fa-fingerprint"></i>&nbsp;Header &
           Footer</a>
       </div>
-      <!-- <div class="bg-indigo-200 border border-indigo-400 rounded text-gray-600 px-4 mb-1 py-2 hover:bg-indigo-400 transition hover:text-gray-100">
-
-      <a class="w-full block" href="header_footer.php"><i class="fa-solid fa-fingerprint"></i>&nbsp;Header & Footer</a>
-    </div> -->
     </div>
 
     <div class=" absolute bottom-20 ">
