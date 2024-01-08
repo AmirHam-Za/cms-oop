@@ -3,7 +3,7 @@
 #### Welcome to my PHP-OOP CMS project! Please Feel Free to check this video:
 [![Watch the video](https://img.youtube.com/vi/Se89eh0DHJM/0.jpg)](https://www.youtube.com/embed/Se89eh0DHJM)
 
-Installation
+#Installation
 Install XAMPP or WAMPP.
 
 Open XAMPP Control panal and start [apache] and [mysql] .
