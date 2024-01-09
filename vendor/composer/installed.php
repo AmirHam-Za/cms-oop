@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'autoload/namespacer',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => 'bbac4277e2ed689ac5c76b8c1b4ffe70e7be7a95',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'autoload/namespacer' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => 'bbac4277e2ed689ac5c76b8c1b4ffe70e7be7a95',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

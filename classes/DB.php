@@ -2,7 +2,7 @@
 namespace classes;
 
 use mysqli;
-include_once '../config.php';
+// include_once '../config.php';
 class DB 
 {
   public $host = HOST;

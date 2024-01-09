@@ -2,6 +2,7 @@
 // include 'User.php';
 include 'header.php';
 include_once 'classes/Registers.php';
+include_once 'DB.php';
 
 $reg = new Registers();
 if($_SERVER['REQUEST_METHOD'] == 'POST')

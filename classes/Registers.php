@@ -3,15 +3,11 @@
 include_once 'DB.php';
 include_once 'helper/Format.php';
 
-include 'PHPMailer/Exception.php';
-include 'PHPMailer/PHPMailer.php';
-include 'PHPMailer/SMTP.php';
+// include 'PHPMailer/Exception.php';
+// include 'PHPMailer/PHPMailer.php';
+// include 'PHPMailer/SMTP.php';
 
 
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 
 class Registers
 {
