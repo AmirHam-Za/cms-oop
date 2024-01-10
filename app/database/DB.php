@@ -5,8 +5,14 @@ use mysqli;
 
 $mysqlDb = new MysqlDatabaseConn();
 $NosqlDb = new NosqlDatabaseConn();
+
+/***************************
+ CONFIGURE  DATABASE HERE
+ **************************/
+// DATABASE-1
 $getDbConnection = new GetDatabaseConnection($mysqlDb);
-// $getDbConnection = new GetDatabaseConnection($NosqlDb);
+// DATABASE-2
+$getDbConnection = new GetDatabaseConnection($NosqlDb);
 $getDbConnection->getDbConnection();
 
 class DB 

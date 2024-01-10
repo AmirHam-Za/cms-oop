@@ -3,7 +3,8 @@
  <!--*************HEADER************  -->
 
 <?php 
-require_once '../../vendor/autoload.php';
+require '../../vendor/autoload.php';
+
 use App\classes\Flash;
 use App\classes\Session;
 
