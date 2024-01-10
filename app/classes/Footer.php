@@ -1,5 +1,7 @@
 <?php
 namespace App\classes;
+
+use App\database\DB;
 include_once "Parents.php";
 
 class Footer extends Parents

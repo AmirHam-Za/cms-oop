@@ -1,11 +1,13 @@
 <?php
+
 namespace App\auth;
 
-use App\classes\DB;
+require '../../vendor/autoload.php';
+
+use App\database\DB;
 use App\helper\Format;
 use App\classes\Session;
 
-require '../../vendor/autoload.php';
 
 class AdminLogin
 {
@@ -15,7 +17,6 @@ class AdminLogin
   {
     $this->db = new DB();
     $this->form = new Format();
-   
   }
 
   public function LoginUser($email, $password)
@@ -33,14 +34,12 @@ class AdminLogin
       // echo $result;
 
       if ($result) {
-
       } else {
 
         $error = "";
         echo "<div id=\"myMessage\"  class='animate__slow animate__animated  animate__rubberBand  absolute  left-[40%] top-[8%]    mb-4  bg-red-100  px-4  text-lg  text-gray-600 rounded border-b-4 border-t-4 border-red-400  '>Invalid username or password!</div>";
         return $error;
       }
-
     }
 
     $numRows = mysqli_num_rows($result);
@@ -48,29 +47,21 @@ class AdminLogin
 
       $row = mysqli_fetch_assoc($result);
 
+        if ($row['v_status'] == 1) {
 
+          Session::set('login', true);
 
-      if ($row['v_status'] == 1) {
+          Session::set('username', $row['username']);
+          Session::set('userId', $row['id']);
+          header('Location: ../../view/backend/dashboard.php');
+        } else {
 
-        Session::set('login', true);
-
-        Session::set('username', $row['username']);
-        Session::set('userId', $row['id']);
-        header('Location: ../../view/backend/dashboard.php');
-
-      } else {
-
-        $error = "Please first varify your email";
-        return $error;
-
-      }
-
+          $error = "Please first varify your email";
+          return $error;
+        }
     } else {
       $error = "Invalid Email Or Password";
       return $error;
     }
-
   }
 }
-
-?>

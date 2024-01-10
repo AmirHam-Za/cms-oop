@@ -1,6 +1,8 @@
 <?php
 namespace App\classes;
 
+use App\database\DB;
+
 class Sidenav {
     public $db;
     // localhost/cmsOop/frontend/layout/sidebar.php

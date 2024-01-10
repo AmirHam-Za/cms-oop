@@ -38,12 +38,12 @@ if ($showNav->num_rows > 0) {
 
             <div class="">
               <a class="border border-indigo-300 rounded-3xl text-gray-200 px-4 py-1 hover:bg-indigo-300 transition hover:text-gray-500"
-                href="../auth/Login.php">Login
+                href="../auth/login.php">Login
               </a>
             </div>
             <div class="">
               <a class="border border-indigo-300 rounded-3xl text-gray-200 px-4 py-1 hover:bg-indigo-300 transition hover:text-gray-500"
-                href="../view/auth/register.php">Sign Up
+                href="../auth/register.php">Sign Up
               </a>
             </div>
 

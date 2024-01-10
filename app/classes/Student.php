@@ -1,8 +1,7 @@
 <?php
 namespace App\classes;
-// error_reporting(E_ALL);
-include_once "DB.php";
-// include "header.php";
+
+use App\database\DB;
 
 class Student
 {

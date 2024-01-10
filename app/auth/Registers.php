@@ -1,15 +1,8 @@
 <?php
 namespace App\auth;
 
-use App\classes\DB;
+use App\database\DB;
 use App\helper\Format;
-// namespace classes;
-// include_once 'DB.php';
-// include_once 'helper/Format.php';
-
-// include 'PHPMailer/Exception.php';
-// include 'PHPMailer/PHPMailer.php';
-// include 'PHPMailer/SMTP.php';
 
 
 

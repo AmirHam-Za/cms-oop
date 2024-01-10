@@ -1,6 +1,7 @@
 <?php
 namespace App\classes;
 
+use App\database\DB;
 use App\helper\Format;
 ob_start();
 
