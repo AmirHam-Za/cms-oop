@@ -1,5 +1,4 @@
 <?php
-
 use App\classes\Sidenav;
 require '../../vendor/autoload.php';
 $nav = new Sidenav();

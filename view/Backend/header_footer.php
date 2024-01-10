@@ -1,5 +1,6 @@
+<!-- *************HEADER*********** -->
 <?php include 'layout/header.php'; ?>
-
+<!-- *************HEADER*********** -->
 <?php
 require '../../vendor/autoload.php';
 

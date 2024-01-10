@@ -1,7 +1,5 @@
 <?php
-
 use App\classes\Footer;
-
 require '../../vendor/autoload.php';
 
 $nav = new Footer();

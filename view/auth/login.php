@@ -21,7 +21,6 @@ if(isset( $usrLogin)){
     echo $usrLogin;
 }
 ?>
-
 <!-- checkLogin -->
 <?php
 if(isset($chkLogin)){
@@ -31,9 +30,6 @@ if(isset($chkLogin)){
     <?=$chkLogin ?>
   </div>
 <?php } ?>
-
-
-
 
 <body>
 
@@ -74,8 +70,6 @@ if(isset($chkLogin)){
             </script>';
       }
       ?>
-
-      
     </div>
   </div>
 </body>

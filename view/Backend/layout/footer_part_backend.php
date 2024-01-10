@@ -1,5 +1,4 @@
 <?php
-
 require '../../vendor/autoload.php';
 use App\classes\Footer;
 $nav = new Footer();
@@ -19,11 +18,8 @@ $showNav = $nav->showFooter();
         <?php 
         foreach ($showNav as $footer) {
           echo '<h1 class="font-semibold text-gray-200">' . $footer['name'] . '</h1>';
-
         }
-        
         ?>
-        
       </span>
     </p>
   </div>
