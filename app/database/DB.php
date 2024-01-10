@@ -2,19 +2,13 @@
 namespace App\database;
 require '../../vendor/autoload.php';
 use mysqli;
-// ******************************
-// define('HOST', 'localhost');
-// define('USER', 'root');
-// define('PASSWORD', '');
-// define('DATABASE', 'my_cms_db');
 
-//OR
 $mysqlDb = new MysqlDatabaseConn();
 $NosqlDb = new NosqlDatabaseConn();
 $getDbConnection = new GetDatabaseConnection($mysqlDb);
 // $getDbConnection = new GetDatabaseConnection($NosqlDb);
 $getDbConnection->getDbConnection();
-// ********************************************
+
 class DB 
 {
   public $host = HOST;
